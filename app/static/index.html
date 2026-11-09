@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI License Plate Recognition</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><header><div class="brand">VISION<span>AI</span></div><div class="heading">AI License Plate Recognition<small>CCTV VEHICLE ANALYTICS · DEMO</small></div><div class="status"><i></i> SYSTEM READY</div></header>
+<main><section class="hero"><div><p class="eyebrow">AUTOMATED NUMBER PLATE ANALYSIS</p><h1>Vehicle & Plate<br><em>Recognition</em></h1><p class="muted">Upload CCTV footage to detect readable registration numbers and generate an annotated video.</p></div>
+<div class="upload"><label for="video">SELECT CCTV VIDEO</label><input id="video" type="file" accept="video/*"><button id="run">Analyze video</button><p id="message">MP4 · AVI · MOV · MKV</p></div></section>
+<section class="metrics"><div><small>FRAMES SCANNED</small><b id="frames">—</b></div><div><small>UNIQUE PLATES</small><b id="count">—</b></div><div><small>VIDEO DURATION</small><b id="duration">—</b></div></section>
+<section class="panel"><div class="panelhead"><h2>Recognition Results</h2><span>OCR CANDIDATES</span></div><div class="tablewrap"><table><thead><tr><th>LICENSE PLATE</th><th>CONFIDENCE</th><th>FIRST SEEN</th><th>LAST SEEN</th><th>APPEARANCES</th></tr></thead><tbody id="rows"><tr><td colspan="5" class="empty">No recognition results yet. Upload a video to begin.</td></tr></tbody></table></div></section>
+<section id="output" class="panel hidden"><div class="panelhead"><h2>Annotated CCTV Output</h2></div><video id="resultVideo" controls></video></section>
+<footer>AI VISION SYSTEM · LOCAL PROCESSING · REVIEW OCR RESULTS BEFORE USE</footer></main>
+<script src="/static/app.js"></script></body></html>
